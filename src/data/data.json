@@ -1,0 +1,121 @@
+{
+    "heroes": [
+        {
+            "nameHero": "captain america",
+            "id": "captain america",
+            "content": {
+                "image": "https://www.twincities.com/wp-content/uploads/2016/04/from-captain-america-civil-war-to-finding-dory-10-movies-to-look-forward-to-in-2016-734527.jpg",
+                "description": "\"For as long as I can remember, I just wanted to do what was right. I guess I'm not quite sure what that is anymore. And I thought I could throw myself back in and follow orders, serve. It's just not the same.\"",
+                "aliasName": "steve rogers"
+            }
+        },
+        {
+            "nameHero": "iron man",
+            "id": "iron man",
+            "content": {
+                "image": "https://dailyspin.id/wp-content/uploads/2022/05/Armor-Iron-Man-Terbaik-5.jpg",
+                "description": "\"My armor, it was never a distraction or a hobby, it was a cocoon. And now, I'm a changed man. You can take away my house, all my tricks and toys. But one thing you can't take away... I am Iron Man.\"",
+                "aliasName": "tony stark"
+            }
+        },
+        {
+            "nameHero": "thor",
+            "id": "thor",
+            "content": {
+                "image": "https://ichef.bbci.co.uk/images/ic/1200x675/p09t1hg0.jpg",
+                "description": "\"My friend, he told me that it was better to feel shitty from losing love than it is to never experience love and feel nothing at all. Feel empty. And I think he was right. Which is how I've been feeling for a long time. I push people away, kept them at a distance because of the fear of that loss, but I don't wanna do that anymore.\"",
+                "aliasName": "son of odin"
+            }
+        },
+        {
+            "nameHero": "loki",
+            "id": "loki",
+            "content": {
+                "image": "https://i.pinimg.com/originals/ed/a8/5c/eda85ca52db662d206fd2a4eb6a4f92f.jpg",
+                "description": "\"I, Loki, Prince of Asgard, Odinson, the rightful King of Jotunheim, God of Mischief, do hereby pledge to you, my undying fidelity.\"",
+                "aliasName": "god of mischief "
+            }
+        },
+        {
+            "nameHero": "doctor strange",
+            "id": "doctor strange",
+            "content": {
+                "image": "https://cdn.europosters.eu/image/1300/wall-murals/marvel-doctor-strange-10900-i55654.jpg",
+                "description": "\"You'd think that saving the world would get you there, but it doesn't.\"",
+                "aliasName": "master of the mystic arts"
+            }
+        },
+        {
+            "nameHero": "hulk",
+            "id": "hulk",
+            "content": {
+                "image": "https://www.pluggedin.com/wp-content/uploads/2019/12/the-hulk-1024x640.jpg",
+                "description": "\"I spent a lifetime running from this aspect of myself. Denying half of your being is no way to live, trust me.\"",
+                "aliasName": "the big guy"
+            }
+        },
+        {
+            "nameHero": "black panther",
+            "id": "black panther",
+            "content": {
+                "image": "https://wallpaperaccess.com/full/94182.jpg",
+                "description": "\"My name is King T'Challa, son of King T'Chaka. I am the sovereign ruler of the nation of Wakanda.\"",
+                "aliasName": "king of wakanda"
+            }
+        },
+        {
+            "nameHero": "black widow",
+            "id": "black widow",
+            "content": {
+                "image": "https://api.duniagames.co.id/api/content/upload/file/13078135381579516828.JPG",
+                "description": "\"I used to have nothing. And then I got this. This job. This family. And I was better because of it. And even though they're gone... I'm still trying to be better.\"",
+                "aliasName": "natasha romanoff"
+            }
+        },
+        {
+            "nameHero": "spiderman",
+            "id": "spiderman",
+            "content": {
+                "image": "https://sm.ign.com/t/ign_it/screenshot/default/cv_rkg3.1280.jpg",
+                "description": "\"I really did try to help you. I mean, I could've killed you. At any given moment, but I didn't. Because my Aunt May taught me that everyone deserves a second chance.\"",
+                "aliasName": "peter parker"
+            }
+        },
+        {
+            "nameHero": "hawkeye",
+            "id": "hawkeye",
+            "content": {
+                "image": "https://staticc.sportskeeda.com/editor/2023/02/c366f-16771733356788-1920.jpg",
+                "description": "\"Okay, look, the city is flying, we're fighting an army of robots... and I have a bow and arrow. None of this makes sense. But I'm going back out there because it's my job.\"",
+                "aliasName": "the hawk"
+            }
+        },
+        {
+            "nameHero": "ant man",
+            "id": "ant man",
+            "content": {
+                "image": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/02/ant-man-paul-rudd.jpg",
+                "description": "\"Do I miss the action? Sometimes. Will I be there when the Avengers need me? Absolutely. I'd never turn my back on them. But right now the only job I want is being a dad. I love you, Cassie. Thank you for being my hero.\"",
+                "aliasName": "the little guy"
+            }
+        },
+        {
+            "nameHero": "falcon",
+            "id": "falcon",
+            "content": {
+                "image": "https://wallpaperaccess.com/full/3100221.jpg",
+                "description": "\"What Would Be The Point Of All The Pain And Sacrifice If I Wasn't Willing To Stand Up And Keep Fighting?\"",
+                "aliasName": "sam wilson"
+            }
+        },
+        {
+            "nameHero": "captain marvel",
+            "id": "captain marvel",
+            "content": {
+                "image": "https://assets1.ignimgs.com/thumbs/userUploaded/2018/12/4/captainmarvel1280-1543892883252.jpg",
+                "description": "\"I've Been Fighting With One Arm Behind My Back. What Happens When I'm Finally Set Free?\"",
+                "aliasName": "carol danvers"
+            }
+        }
+    ]
+}

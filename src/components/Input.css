@@ -1,0 +1,25 @@
+.input-group{
+    position: relative;
+    height: 45px;
+}
+
+.input-group svg{
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    left: 0;
+}
+
+.input-group input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    color: #FFF;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

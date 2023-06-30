@@ -1,0 +1,49 @@
+.dropdown .dropdown-btn{
+    border: none;
+    outline: none;
+}
+
+.dropdown .dropdown-btn svg{
+    transform: rotate(0);
+    transition: .4s;
+}
+
+.dropdown .dropdown-btn.active svg{
+    transition: .4s;
+    transform: rotate(180deg);
+}
+
+.dropdown .dropdown-btn.active ~ .dropdown-menu{
+    opacity: 1;
+    transition: .4s;
+    transform: translateY(0);
+    pointer-events: initial;
+}
+
+.dropdown .dropdown-btn ~ .dropdown-menu{
+    z-index: 12;
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+    transition: .4s;
+}
+
+.dropdown-link{
+    position: relative;
+}
+
+.dropdown-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    transform-origin: left;
+    height: 3px;
+    background: var(--colorRed);
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+
+.dropdown-link:hover::after{
+    width: 100%;
+}
