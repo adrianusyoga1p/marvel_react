@@ -9,7 +9,7 @@ function Navbar() {
     const [toggleActive, setToggleActive] = useState();
 
     function toggleBar () {
-        setToggleActive(current => !current)
+        setToggleActive(current => !current);
     }
 
     return (
