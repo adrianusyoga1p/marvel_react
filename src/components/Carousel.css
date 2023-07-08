@@ -50,9 +50,7 @@
 }
 
 .carousel .btn-group{
-    position: absolute;
-    top: 50%;
-    right: -120px;
+    width: 100%;
     transform: translateY(-50%) rotate(-90deg);
     color: white;
 }
