@@ -47,7 +47,7 @@ function Carousel() {
         <div className="carousel-inner flex flex-col h-full items-center">
             {data.map((item, index) => (
                 <div key={item["id"]} className={`md:w-[350px] w-[250px] md:h-[500px] h-[350px] ${index === activeIndex ? 'carousel-item active' : 'carousel-item'}`}>
-                    <Link to={`/detailhero/${item["id"]}`} className='block h-full w-full'>
+                    <Link to={`/detailhero/${item["id"]}`} className='block h-[500px] w-full'>
                         <img className='object-cover w-full h-full' src={item["content"].image} alt={item["nameHero"]} />
                     </Link>
                 </div>
