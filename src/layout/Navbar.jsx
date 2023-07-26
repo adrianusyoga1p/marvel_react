@@ -38,7 +38,7 @@ function Navbar() {
                     <div className={`navbar-item flex items-center gap-[64px] sm:h-full ${toggleActive ? 'show' : ''}`}>
                         <NavLink to="/">HOME</NavLink>
                         <NavLink to="/gallery">GALLERY</NavLink>
-                        <NavLink to="/movies">MOVIES</NavLink>
+                        <NavLink className="hidden" to="/movies">MOVIES</NavLink>
                     </div>
                     <button className="sm:hidden block toggle text-[20px] text-white" onClick={toggleBar}>
                         <FontAwesomeIcon icon={faBars} />
