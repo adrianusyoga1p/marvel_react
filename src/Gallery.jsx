@@ -82,7 +82,7 @@ function Gallery() {
                         )
                     })
                 )}
-                {filter.length == 0 && <h2 className='md:text-6xl text-white text-3xl'>No Matching Hero</h2>}
+                {filter.length == 0 && <h2 className='md:text-6xl text-center text-white text-5xl px-3'>No Matching Hero</h2>}
             </div>
         </div>
     )
