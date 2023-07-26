@@ -4,8 +4,8 @@ import Carousel from './components/Carousel'
 
 function Home() {
     return (
-        <div className='hero relative flex items-center justify-end h-screen w-full'>
-            <Carousel data={dataHeroes}/>
+        <div className='hero absolute flex items-center justify-center h-full w-full'>
+            <Carousel/>
         </div>
     )
 }

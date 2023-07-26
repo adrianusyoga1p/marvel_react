@@ -8,22 +8,19 @@ import Movies from './Movies'
 import DetailHero from './DetailHero'
 
 function App() {
-
     return (
-        <>
+        <div className='w-full h-screen flex items-center'>
             <h1 className="lg:text-[350px] sm:text-[200px] background m-0 text-[100px]">MARVEL</h1>
-            <div className="w-full h-screen">
-                    <Navbar />
-                    <div className="container flex items-center mx-auto w-full h-screen">
-                        <Routes>
-                            <Route path='/' element={<Home/>} />
-                            <Route path='/gallery' element={<Gallery/>} />
-                            <Route path='/movies' element={<Movies/>} />
-                            <Route path='/detailhero/:id' element={<DetailHero/>} />
-                        </Routes>
-                    </div>
-            </div>
-        </>
+                <Navbar />
+                <div className="container flex items-center mx-auto w-full h-full justify-center">
+                    <Routes>
+                        <Route path='/' element={<Home/>} />
+                        <Route path='/gallery' element={<Gallery/>} />
+                        <Route path='/movies' element={<Movies/>} />
+                        <Route path='/detailhero/:id' element={<DetailHero/>} />
+                    </Routes>
+                </div>
+        </div>
     )
 }
 

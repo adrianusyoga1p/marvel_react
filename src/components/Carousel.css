@@ -1,60 +1,105 @@
-.carousel{
-    min-width: 350px;
+.hero{
+    inset: 0;
+}
+
+.swiper {
+    width: 520px;
+    height: 150%;
+    margin-right: 0 !important;
+    margin-right: 60px !important;
+    padding: 0 80px !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    border-radius: 8px;
+    overflow: clip;
+}
+
+.swiper-slide a{
+    width: 100%;
     height: 100%;
-    justify-content: space-between;
 }
 
-.carousel-inner{
-    position: relative;
-    width: 350px;
-    height: 500px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    gap: 64px;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+    position: absolute;
 }
 
-.carousel-item{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0.8;
-    transform-origin: center center;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 0 0 50px #000000;
+.swiper-slide-active{
+    box-shadow: 0 0 50px #0000004f;
+    transform: scale(1.15) !important;
+    z-index: 5;
+    transition: .4s;
 }
 
-.carousel-item:not(.active)::before{
+.swiper-slide-prev::before,
+.swiper-slide-next::before{
+    transition: .4s;
     content: '';
     position: absolute;
     inset: 0;
-    background: #0000009d;
-    pointer-events: none;
-}
-
-.carousel-item.active{
-    top: 50%;
-    transform: scale(110%) translateY(-50%) !important;
+    background-color: black;
+    opacity: .5;
     z-index: 1;
-    position: absolute;
-    box-shadow: 0 0 50px #000000;
-    opacity: 1;
 }
 
-.carousel-item img{
-    object-position: center;
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: 'SLIDE UP' !important;
 }
 
-.carousel .btn-group{
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: 'SLIDE DOWN' !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 20px !important;
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fff !important;
+    width: fit-content !important;
+    position: static !important;
+    /* position: absolute !important; */
+    margin-top: 0 !important;
+    /* transform: rotate(-90deg); */
+}
+
+.button-group{
     width: 100%;
+    min-height: 40px;
+    position: absolute;
+    right: -45%;
+    top: 50%;
     transform: translateY(-50%) rotate(-90deg);
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    z-index: 10;
 }
 
-.carousel .btn-group button{
-    font-size: 20px;
+@media screen and (max-width:639px) {
+    .swiper{
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .swiper{
+        padding: 50px !important;
+    }
 }
