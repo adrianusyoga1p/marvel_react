@@ -9,7 +9,7 @@ import DetailHero from './DetailHero'
 
 function App() {
     return (
-        <div className='w-full h-screen flex items-center'>
+        <div className='w-full lg:h-screen h-full flex items-center'>
             <h1 className="lg:text-[350px] sm:text-[200px] background m-0 text-[100px]">MARVEL</h1>
                 <Navbar />
                 <div className="container flex items-center mx-auto w-full h-full justify-center">

@@ -34,7 +34,7 @@ function Navbar() {
         <>
             <div className='w-full py-[16px] px-7 navbar' style={{background: navColor, backdropFilter: blur}}>
                 <div className="container mx-auto flex items-center justify-between">
-                    <img src={logoImage} alt="" className="logo w-[140px] max-w-full h-auto" />
+                    <img src={logoImage} alt="" className="logo sm:w-[140px] w-[80px] max-w-full h-auto" />
                     <div className={`navbar-item flex items-center gap-[64px] sm:h-full ${toggleActive ? 'show' : ''}`}>
                         <NavLink to="/">HOME</NavLink>
                         <NavLink to="/gallery">GALLERY</NavLink>

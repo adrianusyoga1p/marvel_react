@@ -8,13 +8,13 @@ function DetailHero() {
     const { id } = useParams();
 
     return (
-        <div className='section content relative sm:px-0 px-[20px] md:mt-0 mt-[88px]'>
+        <div className='section relative content sm:px-0 px-5 lg:pt-0 sm:pt-[180px] pt-[88px] pb-5 md:pb-0'>
             {data.map(item=> {
                 if(item.id == id) {
                     return (
                         <div key={item?.id} className="flex items-center justify-center flex-col md:gap-[32px] gap-[20px] w-full">
                             <h1 className='text-white text-[42px] mt-0 md:mb-[48px] mb-[24px]'>{item?.nameHero}</h1>
-                            <div className="flex md:flex-row flex-col items-center bg-[#0C122D] w-full md:h-[350px] h-[600px]" style={{borderTop: "4px solid var(--colorRed)"}}>
+                            <div className="flex md:flex-row flex-col items-center w-full md:h-[350px] h-[600px]" style={{borderTop: "4px solid var(--colorRed)", background: '#0C122D'}}>
                                 <div className="md:w-[45%] w-full md:h-[450px] h-full md:rounded-[5px] overflow-hidden hexagon">
                                     <img className='object-cover object-center w-full h-full' src={item?.content.image} alt="" />
                                 </div>
