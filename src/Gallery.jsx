@@ -61,25 +61,28 @@ function Gallery() {
                 </div>
             </div>
             <div className="flex flex-wrap items-center -mx-3">
-                {filter.map((item) => {
-                    return (
-                        <div key={item?.id} className="md:w-full sm:basis-1/2 lg:basis-1/4 w-full h-full px-3 mb-6">
-                            <Link to={`/detailhero/${item?.id}`}>
-                                <div className="bg-white w-full h-full">
-                                    <div className="flex flex-col items-center">
-                                        <div className="h-[200px] w-full card-img">
-                                            <img src={item?.content.image} className="object-cover max-w-full w-full h-full" />
-                                        </div>
-                                        <div className="content h-min flex flex-col justify-center items-center py-6">
-                                            <h2 className='my-auto text-2xl'>{item.nameHero}</h2>
-                                            <h2 className='text-base my-auto'>{item?.content.aliasName}</h2>
+                {(
+                    filter.map((item) => {
+                        return (
+                            <div key={item?.id} className="md:w-full sm:basis-1/2 lg:basis-1/4 w-full h-full px-3 mb-6">
+                                <Link to={`/detailhero/${item?.id}`}>
+                                    <div className="bg-white w-full h-full">
+                                        <div className="flex flex-col items-center">
+                                            <div className="h-[200px] w-full card-img">
+                                                <img src={item?.content.image} className="object-cover max-w-full w-full h-full" />
+                                            </div>
+                                            <div className="content h-min flex flex-col justify-center items-center py-6">
+                                                <h2 className='my-auto text-2xl'>{item.nameHero}</h2>
+                                                <h2 className='text-base my-auto'>{item?.content.aliasName}</h2>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                    )
-                })}
+                                </Link>
+                            </div>
+                        )
+                    })
+                )}
+                {filter.length == 0 && <h2 className='md:text-6xl text-white text-3xl'>No Matching Hero</h2>}
             </div>
         </div>
     )

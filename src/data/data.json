@@ -134,6 +134,24 @@
                 "description": "\"You break the rules and become a hero, I do it and I become the enemy. That doesn't seem fair.\"",
                 "aliasName": "wanda maximoff"
             }
+        },
+        {
+            "nameHero": "vision",
+            "id": 16,
+            "content": {
+                "image": "https://ngonoo.com/wp-content/uploads/2015/11/vision1.jpg",
+                "description": "\"I've always been alone, so I don't feel the lack. It's all I've ever known. I've never experienced loss because I never had a loved one to lose. But what is grief, if not love persevering?\"",
+                "aliasName": "vis"
+            }
+        },
+        {
+            "nameHero": "star lord",
+            "id": 17,
+            "content": {
+                "image": "https://cineverse.id/wp-content/uploads/2023/04/star-lord-chris-pratt.jpeg",
+                "description": "\"I've been lost before. But then I found meaning, I found love. And yeah, it got taken from me, and god, that hurts. But that shitty feeling is better than feeling empty.\"",
+                "aliasName": "star-prince"
+            }
         }
     ]
 }
