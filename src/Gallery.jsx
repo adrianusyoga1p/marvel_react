@@ -27,16 +27,32 @@ function Gallery() {
     }, []);
 
     // Filter data
+    let updateList = [...data];
     const search = (q) => {
         const query = q.target.value;
-        let updateList = [...data];
         updateList = updateList.filter(item => {
             return (
-                item.nameHero.toLowerCase().indexOf(query.toLowerCase()) !== -1 || item.content.aliasName.toLowerCase().indexOf(query.toLowerCase()) !== -1
+                item.nameHero.toLowerCase().indexOf(query.toLowerCase()) !== -1 
+                || item.content.aliasName.toLowerCase().indexOf(query.toLowerCase()) !== -1
             )
         });
         setFilter(updateList)
     };
+
+    // Sorting ascending descending data array
+    const ascClick = () => {
+        updateList = updateList.sort((a, b) => 
+            a.nameHero > b.nameHero ? 1 : -1
+        );
+        setFilter(updateList)
+    }
+    
+    const descClick = () => {
+        updateList = updateList.sort((a, b) => 
+            a.nameHero > b.nameHero ? -1 : 1
+        );
+        setFilter(updateList)
+    }
 
     return (
         <div className='section content w-full h-full sm:px-4 pt-[120px] px-[20px]'>
@@ -52,8 +68,8 @@ function Gallery() {
                     </button>
                     {dropdownActive && (
                         <ul className='dropdown-menu absolute bg-slate-100 w-full rounded overflow-hidden'>
-                            <li className='dropdown-item'><a className='p-3 dropdown-link block' href="#">A TO Z</a></li>
-                            <li className='dropdown-item'><a className='p-3 dropdown-link block' href="#">Z TO A</a></li>
+                            <li className='dropdown-item'><a className='p-3 dropdown-link block' href="#" onClick={ascClick}>A TO Z</a></li>
+                            <li className='dropdown-item'><a className='p-3 dropdown-link block' href="#" onClick={descClick}>Z TO A</a></li>
                             <li className='dropdown-item'><a className='p-3 dropdown-link block' href='#'>MOVIE</a></li>
                             <li className='dropdown-item'><a className='p-3 dropdown-link block' href="#">TV</a></li>
                         </ul>
@@ -72,7 +88,7 @@ function Gallery() {
                                                 <img src={item?.content.image} className="object-cover max-w-full w-full h-full" />
                                             </div>
                                             <div className="content h-min flex flex-col justify-center items-center py-6">
-                                                <h2 className='my-auto text-2xl'>{item.nameHero}</h2>
+                                                <h2 className='my-auto text-2xl'>{item?.nameHero}</h2>
                                                 <h2 className='text-base my-auto'>{item?.content.aliasName}</h2>
                                             </div>
                                         </div>
